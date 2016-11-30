@@ -1,0 +1,51 @@
+<html>
+  <head>
+    <title>Rock | Paper | Scissors</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Inline" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <header class="center title">
+          <h2>The Rock Paper Scissors Game</h2>
+          <h4>No protocols, you know the game, just choose</h4>
+          <p id="announcement" class="btn"></p>
+        </header>
+        <div id="choices" class="col s12 m12">
+
+          <button class="col s12 m3 user-choice" id="rock"><img class="col s12" src="rock.png"></button>
+          <div class="col m1"></div>
+          <button class="col s12 m3 user-choice" id="paper"><img class="col s12" src="paper.png"></button>
+          <div class="col m1"></div>
+          <button class="col s12 m3 user-choice" id="scissors"><img class="col s12" src="scissors.png"></button>
+          <div class="col m1"></div>
+        </div>
+        <div class="col s12 m6">
+          <div id="img_choice"></div>
+        </div>
+        <div id="stats" class="col s12 m12">
+          <div class="card">
+            <div class="card-container">
+              <h3 class="card-title">Statistics</h3>
+              <h5 id="wins"></h5>
+              <h5 id="loose"></h5>
+              <h5 id="ties"></h5>
+              <h5 id="my_stats"></h5>
+              <h5 id="his_stats"></h5>
+              <div class="center">
+                <div id="continue" class="btn">Continue</div>
+                <div id="reset" class="btn">Reset</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m6">
+          <div id="img_pc_choice"></div>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
